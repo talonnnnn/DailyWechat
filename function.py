@@ -15,7 +15,7 @@ def get_time():
 
 def get_words():
     words = requests.get("https://apis.tianapi.com/caihongpi/index?key=117a36cb450a1049ab6faaa6b1415591")
-    print words.json()['result']['content']
+    print (words.json()['result']['content'])
     return words.json()['result']['content']
 
 # def get_words():
