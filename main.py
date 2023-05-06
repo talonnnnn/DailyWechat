@@ -39,7 +39,7 @@ if __name__ == '__main__':
         }
         data['weather'] = {
             'value': weather['text_day'],
-            'color': '#002fa4'
+            'color': '#63b359'
         }
         data['city'] = {
             'value': wea_city,
@@ -47,7 +47,7 @@ if __name__ == '__main__':
         }
         data['tem_high'] = {
             'value': weather['high'],
-            'color': '#D44848'
+            'color': '#63b359'
         }
         data['tem_low'] = {
             'value': weather['low'],
