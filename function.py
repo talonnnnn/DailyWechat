@@ -14,8 +14,14 @@ def get_time():
 
 
 def get_words():
-    words = requests.get("https://api.shadiao.pro/chp").json()
-    return words['data']['text']
+    words = requests.get("https://apis.tianapi.com/caihongpi/index?key=117a36cb450a1049ab6faaa6b1415591")
+    return words.json()['result']['content']
+
+# def get_words():
+#     words = requests.get("https://api.shadiao.pro/chp")
+#     if words.status_code != 200:
+#         return get_words()
+#     return words.json()['data']['text']
 
 
 def get_random_color():
