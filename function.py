@@ -15,8 +15,6 @@ def get_time():
 
 def get_words():
     words = requests.get("https://api.shadiao.pro/chp").json()
-    if words.status_code != 200:
-        return get_words()
     return words['data']['text']
 
 
